@@ -1,5 +1,6 @@
 import { useFlyIn, useFlyInList } from "../hooks/useFlyIn"
 import certHR from "../assets/images/certificate_hr.webp"
+import certCRM from "../assets/images/CRM Certificate.webp"
 
 export default function Certifications() {
   const eyeRef   = useFlyIn("fly-from-left", 0.2)
@@ -43,16 +44,26 @@ export default function Certifications() {
             </div>
           </div>
 
-          {/* Coming soon */}
+          {/* CRM Certificate */}
           <div
             data-fly
-            className="fly-up border-2 border-dashed border-[#E8DDD5] rounded-[20px] flex items-center justify-center min-h-[360px] bg-transparent"
+            className="fly-up bg-[#FFFCF8] border border-[#E8DDD5] rounded-[20px] overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-200 group"
             style={{ transitionDelay: "150ms" }}
           >
-            <div className="text-center p-8">
-              <div className="text-4xl mb-4">⏳</div>
-              <h3 className="font-serif text-lg text-[#5C3D2E] mb-2">More certifications in review</h3>
-              <p className="text-sm text-[#9C8578] leading-relaxed">Additional credentials are currently being processed and will be added here soon.</p>
+            <div className="relative overflow-hidden h-[260px]">
+              <img src={certCRM} alt="CRM Certificate" className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-400" />
+              <div className="absolute inset-0 bg-[rgba(92,61,46,0.55)] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="bg-[#FFFCF8] text-[#5C3D2E] px-5 py-2 rounded-full text-sm font-semibold">Certificate preview</span>
+              </div>
+            </div>
+            <div className="p-6">
+              <span className="text-xs font-semibold text-[#7A9E7E] uppercase tracking-wider">✦ Certified</span>
+              <h3 className="font-serif text-lg text-[#5C3D2E] mt-2 mb-1">Customer Relationship Management</h3>
+              <p className="text-sm text-[#C4714A] font-medium mb-3">Professional Skills Certificate</p>
+              <div className="flex gap-4 flex-wrap text-xs text-[#9C8578]">
+                <span>📅 May 5, 2026</span>
+                <span>🔖 1425A210406</span>
+              </div>
             </div>
           </div>
         </div>
