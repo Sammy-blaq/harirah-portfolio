@@ -59,7 +59,7 @@ export default function Certifications() {
             <div className="p-6">
               <span className="text-xs font-semibold text-[#7A9E7E] uppercase tracking-wider">✦ Certified</span>
               <h3 className="font-serif text-lg text-[#5C3D2E] mt-2 mb-1">Customer Relationship Management</h3>
-              <p className="text-sm text-[#C4714A] font-medium mb-3">Professional Skills Certificate</p>
+              <p className="text-sm text-[#C4714A] font-medium mb-3">AQskill</p>
               <div className="flex gap-4 flex-wrap text-xs text-[#9C8578]">
                 <span>📅 May 5, 2026</span>
                 <span>🔖 1425A210406</span>
