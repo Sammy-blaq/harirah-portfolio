@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FBF7F2;
+  --color-warm-white: #FFFCF8;
+  --color-terracotta: #C4714A;
+  --color-terra-light: #F2E0D5;
+  --color-terra-mid: #D98B6A;
+  --color-brown: #5C3D2E;
+  --color-brown-mid: #8B6355;
+  --color-sage: #7A9E7E;
+  --color-sage-light: #EBF2EB;
+  --color-muted: #9C8578;
+  --color-border: #E8DDD5;
+  --color-text: #3B2A20;
+
+  --font-serif: "DM Serif Display", serif;
+  --font-sans: "DM Sans", sans-serif;
+  --font-hand: "Caveat", cursive;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-text);
+}
+
+.font-serif { font-family: var(--font-serif); }
+.font-hand  { font-family: var(--font-hand); }
+
+/* Fly-in animations */
+.fly-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22,1,0.36,1);
+}
+.fly-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22,1,0.36,1);
+}
+.fly-from-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22,1,0.36,1);
+}
+.fly-from-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22,1,0.36,1);
+}
+.fly-from-bottom {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22,1,0.36,1);
+}
+.revealed {
+  opacity: 1 !important;
+  transform: translate(0) !important;
+}
+
+/* Hero image reveal */
+.hero-img-hidden {
+  opacity: 0;
+  transform: scale(1.06) translateY(18px);
+  transition: opacity 1.1s cubic-bezier(0.22,1,0.36,1), transform 1.2s cubic-bezier(0.22,1,0.36,1);
+}
+.hero-img-visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* Loader bar */
+@keyframes loadbar {
+  0%   { width: 0%; }
+  60%  { width: 80%; }
+  100% { width: 100%; }
+}
+.loader-bar { animation: loadbar 1.6s cubic-bezier(0.4,0,0.2,1) forwards; }
+
+/* Dot pulse */
+@keyframes dotpulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(1.4); }
+}
+.dot-pulse { animation: dotpulse 1.2s ease-in-out infinite; }
+
+/* Availability pulse */
+@keyframes avail-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+.avail-dot { animation: avail-pulse 2s infinite; }
