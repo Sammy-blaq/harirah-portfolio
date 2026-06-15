@@ -15,7 +15,7 @@ export default function Hero({ loading }) {
   }, [loading])
 
   return (
-    <section id="home" className="min-h-screen pt-[72px] grid grid-cols-1 md:grid-cols-2">
+    <section id="home" className="min-h-screen pt-[72px] grid grid-cols-1 lg:grid-cols-2">
       {/* Left */}
       <div className="bg-[#FFFCF8] flex flex-col justify-center px-[8%] py-16 relative overflow-hidden">
         <div className="absolute -top-20 -right-16 w-80 h-80 bg-[#F2E0D5] rounded-[60%_40%_70%_30%/50%_60%_40%_50%] opacity-50 z-0" />
@@ -51,12 +51,12 @@ export default function Hero({ loading }) {
       </div>
 
       {/* Right — photo */}
-      <div className="relative overflow-hidden min-h-[340px] md:min-h-0">
+      <div className="relative overflow-hidden min-h-[320px] sm:min-h-[380px] lg:min-h-0 bg-[#EFE5DE]">
         <img
           ref={imgRef}
           src={headshot}
           alt="Ajeka Harirah"
-          className="w-full h-full object-cover object-top hero-img-hidden"
+          className="w-full h-full object-cover object-center lg:object-top hero-img-hidden"
         />
       </div>
     </section>
