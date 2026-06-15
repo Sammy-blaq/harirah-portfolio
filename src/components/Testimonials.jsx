@@ -1,7 +1,7 @@
 import { useFlyIn, useFlyInList } from "../hooks/useFlyIn"
 
 const testimonials = [
-  { name: "Giselle Palmer", role: "Founder/CEO", quote: "Ajeka has been an absolute lifesaver. My inbox used to be a daily source of stress — now it's completely handled. She anticipates things before I even ask." },
+  { name: "Giselle Palmer", role: "Founder/CEO", quote: "Ajeka has been an absolute lifesaver. My inbox used to be a daily source of stress, now it's completely handled. She anticipates things before I even ask." },
   { name: "Daniel K.", role: "CEO, E-commerce Brand", quote: "Professional, reliable, and so organized. Ajeka took ownership of our customer support and our clients noticed the difference almost immediately." },
   { name: "Amara T.", role: "Independent Consultant", quote: "I never have to follow up. She delivers on time, communicates clearly, and flags issues before they become problems. That proactiveness is genuinely rare." },
 ]
