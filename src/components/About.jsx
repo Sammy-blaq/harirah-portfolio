@@ -63,7 +63,7 @@ export default function About() {
             {traits.map((t) => (
               <span
                 key={t}
-                className="bg-terra-light text-terracotta text-xs font-medium px-4 py-1.5 rounded-full border border-[rgba(196,113,74,0.2)]"
+                className="bg-[#F2E0D5] text-[#C4714A] text-xs font-medium px-4 py-1.5 rounded-full border border-[rgba(196,113,74,0.2)]"
               >
                 {t}
               </span>
